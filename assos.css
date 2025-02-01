@@ -1,0 +1,238 @@
+/* Réinitialisation des marges et du padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Section image (en-tête ou première section) */
+section {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adapter l'image à la hauteur de la barre de navigation */
+.img {
+    width: 100%;
+    /* L'image occupe toute la largeur de la page */
+    height: 80px;
+    /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+    object-fit: cover;
+    /* L'image couvre toute la zone, en recadrant si nécessaire */
+    display: block;
+    /* Nécessaire pour centrer horizontalement */
+    margin: 0 auto;
+    /* Centrer horizontalement */
+}
+
+.med {
+    width: 50%;
+    /* L'image occupe toute la largeur de la page */
+    height: 400px;
+    /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+    object-fit: cover;
+    /* L'image couvre toute la zone, en recadrant si nécessaire */
+    display: block;
+    /* Nécessaire pour centrer horizontalement */
+    margin: 0 auto;
+    /* Centrer horizontalement */
+}
+
+.med1 {
+    width: 50%;
+    /* L'image occupe toute la largeur de la page */
+    height: 400px;
+    /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+    object-fit: cover;
+    /* L'image couvre toute la zone, en recadrant si nécessaire */
+    display: block;
+    /* Nécessaire pour centrer horizontalement */
+    margin: 0 auto;
+    /* Centrer horizontalement */
+}
+
+.med2 {
+    width: 50%;
+    /* L'image occupe toute la largeur de la page */
+    height: 400px;
+    /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+    object-fit: cover;
+    /* L'image couvre toute la zone, en recadrant si nécessaire */
+    display: block;
+    /* Nécessaire pour centrer horizontalement */
+    margin: 0 auto;
+    /* Centrer horizontalement */
+}
+
+/* Assurer l'affichage correct des images */
+.med,
+.med1,
+.med2 {
+    display: block;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Délais pour un effet en cascade */
+.med {
+    animation-delay: 0.2s;
+}
+
+.med1 {
+    animation-delay: 0.4s;
+}
+
+.med2 {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Sections principales */
+main {
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer i {
+    font-size: 24px;
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Réactivité (Responsive) */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    footer h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer i {
+        font-size: 20px;
+    }
+}
