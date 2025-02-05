@@ -3,84 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Association de santé et prévention">
+    <meta property="og:description" content="Association dédiée à la prévention et à la recherche de maladies">
+    <meta property="og:image" content="https://img.freepik.com/vecteurs-libre/illustration-du-concept-securite-sociale_23-2150293950.jpg?t=st=1738704521~exp=1738708121~hmac=9022347bf0a9337e413fd32ea4e53e625a1ac6dfcadfda20ec68483a6376235d&w=740">
+    <meta property="og:url" content="URL de la page">
     <script src="https://kit.fontawesome.com/2620f285a9.js" crossorigin="anonymous"></script>
-    <title>Association Santé Préventive</title>
+    <title>Association de santé et prévention</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--  styles personnalisés -->
+    <style>
+        /* Ajoute une transition pour le zoom */
+        .img-zoom {
+            transition: transform 0.3s ease-in-out;
+        }
+        /* Applique un zoom au survol */
+        .img-zoom:hover {
+            transform: scale(1.1);
+        }
+    </style>
     <link rel="stylesheet" href="assos.css">
 </head>
-
 <body>
     <header>
         <h1>Association Santé Préventive</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="#about">À Propos</a></li>
-                <li><a href="#actions">Nos Actions</a></li>
-                <li><a href="#team">Notre Équipe</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                
+                <!-- Bouton hamburger pour les petits écrans -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menu Hamburger -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">À Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#actions">Nos Actions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Notre Équipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Image statique dans la barre de navigation -->
+                <img class="doc" src="./images/bandeau.jpg" alt="doc" style="height: 100px; width: auto;">
+            </div>
         </nav>
     </header>
-    <img class="img" src="./images/medecins.jpg" alt="Équipe de l'Association Santé Préventive" />
     <main>
         <section id="about">
             <h2>À Propos</h2>
-            <p>Notre association œuvre pour améliorer les moyens du milieu médical et inciter les jeunes à se faire dépister pour des maladies habituellement recherchées à partir de 55/60 ans. Une détection précoce permet un meilleur traitement.</p>
+            <p>L'association joue un rôle essentiel dans le domaine de la santé en mettant l'accent sur la prévention et la détection précoce des maladies qui sont souvent diagnostiquées à un stade avancé. Son objectif principal est d’informer, sensibiliser et accompagner les individus afin de favoriser une prise en charge précoce et efficace des affections les plus courantes. <br>
+            Grâce à diverses initiatives, telles que des campagnes de sensibilisation, des dépistages gratuits et des conférences médicales, l'association œuvre pour une meilleure compréhension des facteurs de risque et des signes avant-coureurs des maladies chroniques et dégénératives. En intervenant auprès du grand public, mais aussi en collaborant avec des professionnels de santé, elle contribue à une amélioration de la qualité de vie des personnes concernées. <br>
+            En mettant l’accent sur la prévention, l'association encourage les comportements favorables à la santé, comme une alimentation équilibrée, une activité physique régulière et un suivi médical adapté. Son engagement vise à réduire le nombre de diagnostics tardifs et à offrir aux patients les meilleures chances de traitement grâce à une prise en charge anticipée. <br>
+            Il est important de souligner que, pour certains cancers, comme celui de la prostate, le dépistage ne commence généralement qu’à partir de 55 ans. Pourtant, ce cancer pourrait être détecté et soigné plus tôt, avant qu'il n'atteigne des stades plus graves. La prévention joue ici un rôle clé, car une détection plus précoce peut améliorer considérablement les chances de guérison. L'association encourage donc un suivi médical préventif et la consultation régulière avec des spécialistes, même avant l'âge de 55 ans, pour les individus à risque. <br>
+            Ainsi, par ses actions concrètes et accessibles, l’association s’affirme comme un acteur clé de la promotion de la santé et du bien-être pour tous.</p>
         </section>
-        <img class="med"  src="./images/img2.png" alt="photo medical">
+        <img class="med img-zoom" src="./images/img2.png" alt="photo medical">
+        
         <section id="actions">
             <h2>Nos Actions</h2>
-            <p>Nous menons des campagnes de sensibilisation, soutenons la recherche médicale et facilitons l'accès au dépistage pour les jeunes adultes.</p>
+            <p>Notre association s'engage activement dans la lutte contre les maladies souvent détectées tardivement en mettant en place des actions concrètes pour sensibiliser, informer et accompagner le public. <br> Grâce à ces initiatives, notre association œuvre chaque jour pour un avenir où la prévention et la détection précoce permettent de sauver des vies et d'améliorer la qualité de vie des personnes concernées.</p>
+            <h2>Campagnes de sensibilisation</h2>
+            <p>Nous organisons régulièrement des événements, des conférences et des actions de communication pour informer le grand public sur l’importance de la prévention et de la détection précoce. <br> À travers des outils pédagogiques, des témoignages et des supports interactifs, nous aidons chacun à mieux comprendre les enjeux de santé et à adopter des comportements préventifs.</p>
+            <h2>Soutien à la recherche médicale</h2>
+            <p>Convaincus que l’innovation scientifique est essentielle pour améliorer les diagnostics et les traitements, nous soutenons activement la recherche médicale. Nous collaborons avec des chercheurs et des institutions spécialisées afin de contribuer au développement de nouvelles solutions pour anticiper et traiter plus efficacement ces maladies.</p>
+            <h2>Accès au dépistage pour les jeunes adultes</h2>
+            <p>Nous facilitons l'accès au dépistage en mettant en place des actions de proximité, comme des journées de dépistage gratuites ou des partenariats avec des structures de santé. L’objectif est d’encourager un suivi médical préventif dès le plus jeune âge, afin d’augmenter les chances de prise en charge rapide et efficace.</p>
         </section>
-        <img class="med1"  src="./images/medecins1.jpg" alt="photo medecins">
+        <img class="med1 img-zoom" src="./images/medecins1.jpg" alt="photo medecins">
+        
         <section id="team">
             <h2>Notre Équipe</h2>
-            <p>Une équipe engagée composée de professionnels de la santé et de bénévoles passionnés, unis pour une meilleure prévention.</p>
+            <p>Elle est composée de professionnels de la santé qualifiés, d’experts en prévention ainsi que de bénévoles dévoués et passionnés. Ensemble, nous mettons notre savoir-faire et notre engagement au service de la communauté pour promouvoir des actions de prévention efficaces. <br> Chaque membre joue un rôle clé, contribuant à sensibiliser, informer et accompagner nos publics afin de favoriser des comportements plus sains et prévenir les maladies. <br> Unis par notre mission, nous œuvrons chaque jour pour construire un avenir plus sain pour tous.</p>
         </section>
-        <img class="med2"  src="./images/equipe.jpg" alt="photo equipe medical">
+        <img class="med2 img-zoom" src="./images/equipe.jpg" alt="photo equipe medical">
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Vous pouvez nous joindre via notre adresse e-mail ou nous suivre sur nos réseaux sociaux pour en savoir plus sur nos initiatives.</p>
+    <h2>Contact</h2>
+    <p>Vous pouvez nous joindre via notre adresse e-mail ou utiliser le formulaire ci-dessous pour nous envoyer un message. Nous vous répondrons dans les plus brefs délais.</p>
+
+    <!-- Formulaire de contact -->
+<form action="#" method="POST" style="max-width: 400px; margin: auto;">
+    <div class="mb-3">
+        <label for="name" class="form-label">Nom</label>
+        <input type="text" class="form-control form-control-sm" id="name" name="name" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Adresse e-mail</label>
+        <input type="email" class="form-control form-control-sm" id="email" name="email" required>
+    </div>
+    <div class="mb-3">
+        <label for="subject" class="form-label">Objet</label>
+        <input type="text" class="form-control form-control-sm" id="subject" name="subject" required>
+    </div>
+    <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control form-control-sm" id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary btn-sm">Envoyer</button>
+</form>
         </section>
     </main>
-    
-    <footer>
-        <section class="container">
-            <h1>Mentions Légales</h1>
-            <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique, nous portons à la connaissance des utilisateurs et visiteurs du site <strong>votre-site.com</strong> les informations suivantes :</p>
-            
-            <h2>Éditeur du site</h2>
-            <p>
-                Raison sociale : <strong>Nom de l'entreprise</strong><br>
-                Forme juridique : <strong>Exemple : SAS</strong><br>
-                Siège social : <strong>Adresse complète</strong><br>
-                Téléphone : <strong>+33 (0)1 23 45 67 89</strong><br>
-                Email : <strong>contact@votre-site.com</strong><br>
-                Numéro SIRET : <strong>123 456 789 00012</strong><br>
-                Directeur de publication : <strong>Nom du responsable</strong>
-            </p>
-    
-            <h2>Hébergeur du site</h2>
-            <p>
-                Hébergeur : <strong>Nom de l'hébergeur</strong><br>
-                Adresse : <strong>Adresse complète de l'hébergeur</strong><br>
-                Téléphone : <strong>01 23 23 23 23</strong>
-            </p>
-    
-            <h2>Propriété intellectuelle</h2>
-            <p>Le contenu du site <strong>votre-site.com</strong>, incluant, de façon non limitative, les graphismes, images, textes, vidéos, logos et icônes, est la propriété exclusive de <strong>Nom de l'entreprise</strong>, à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.</p>
-    
-            <h2>Limitation de responsabilité</h2>
-            <p>Le site <strong>votre-site.com</strong> ne saurait être tenu pour responsable des erreurs rencontrées sur le site, de problèmes techniques, d’interprétation des informations publiées, ni des conséquences de leur utilisation.</p>
-    
-            <h2>Contact</h2>
-            <p>Pour tout signalement de contenu ou d'activités illicites, l'utilisateur peut contacter l'éditeur à l'adresse email suivante : <strong>contact@votre-site.com</strong>.</p>
-        </section>
+        <footer>
         <p>
-            <a class="container" href="mentions-legales">Mentions légales</a>
-        </p>
-        <p>&copy; 2025 Association Santé Préventive - Tous droits réservés.</p>
-        <i class="fa-brands fa-facebook"></i>
-    </footer>
+            <a class="container" href="mentions_legales.html" target="_blank">Mentions légales</a></p>
+            <p>&copy; 2025 Association Santé Préventive - Tous droits réservés.</p><i class="fa-brands fa-facebook"></i>
+        </footer>
 </body>
 </html>
